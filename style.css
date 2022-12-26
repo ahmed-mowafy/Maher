@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  
+}
+.container {
+  width: 100%;
+  float: right;
+}
+
+section{
+  padding:2%;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width:100%;
+  padding:2% 2%;
+  background-color: white;
+}
+
+nav .menu{
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul a{
+  text-decoration: none;
+  color:black;
+  font-size: 1.1em;
+  margin: 10px;
+}
+
+
+
+
+/*------------main- sec----------------*/
+.main-sec {
+  display: flex;
+  justify-content: right;
+  text-align: right;
+  direction: rtl;
+  align-items: center;
+  width:100%;
+  background-color: rgb(232,223,216);
+  padding: 0;
+}
+
+.info{
+  flex-basis: 50%;
+  padding: 1% 10%;
+  min-width: 200px;
+  justify-content: space-between;
+}
+
+.image{
+  padding:0 0;
+}
+
+.image img{
+  width:100%;
+  height:100%;
+}
+
+.logo{
+  position: relative;
+  width:15%;
+  left:0;
+}
+
+.logo img {
+  width:100%;
+}
+
+.title {
+  font-size:4rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+h2{
+  font-weight: 600;
+  margin:30px 0;
+}
+
+.more-btn {
+  display: inline-block;
+  text-decoration: none;
+  color:black ;
+  border: 2px solid black;
+  padding:0.3125em 2.5em;
+  font-size:1.1em;
+  font-weight:600;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+
+
+
+/*-------------------about------------*/
+.about-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width:100%;
+  padding:5% 10%;
+}
+
+.logo2 {
+  width:10%;
+}
+
+.logo2 img {
+  width:100%;
+}
+
+.about .title {
+  font-size:5rem;
+  margin-top: 10px;
+}
+
+.about p {
+  font-size: 1.9em;
+  font-weight: 600;
+  margin:10px 0;
+}
+
+
+
+
+
+
+/*-------------------Servises------------*/
+.sevices {
+  background-color: rgb(232,223,216);
+}
+
+.sevices .title{
+  display: flex;
+  justify-content: center;
+}
+
+.sm-container{
+  display:flex ;
+  justify-content: center;
+  flex-wrap:wrap;
+  padding-bottom: 50px;
+}
+
+.card {
+  background-color: white;
+  color:black;
+  width:15em;
+  height:20em;
+  box-shadow: 0 5px 10px rgb(0,0,0);
+  padding:0 25px;
+  margin:50px 20px;
+  transition: 0.7s ease;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+.icon{
+  text-align:center;
+  align-items: center;
+  margin:0;
+  padding: 0;
+}
+
+.icon i{
+  position: relative;
+  bottom:30px;
+  color:white;
+  background-color: black;
+  font-size:3em;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  padding: 5px;
+}
+
+.details{
+  margin-bottom:10px;
+  text-align:right;
+  justify-content: right;
+}
+
+.details .categories{
+  display: block;
+  text-align: right;
+  direction: rtl;
+}
+
+.details h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin:0 0 10px 0;
+}
+
+
+
+
+
+/*------------------quete------------------*/
+.quet .title {
+  font-size:4rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+
+
+
+/*------------------quete------------------*/
+.contact{
+  padding: 2%;
+  direction: ltr;
+}
+
+.contact .info{
+  padding: 2%;
+}
+
+.contact .image{
+  padding:2%;
+}
+
+.contact h1 {
+  margin-bottom: 30px;
+}
+.contact h2 {
+  font-size:1.8rem;
+  font-weight: 700;
+}
+
+.contact h2 span {
+  font-weight: 400;
+}
+
+
+
+
+
+/*------------------@media------------------*/
+@media  (max-width : 1023px){
+  /*------query for header &  nav bar ------>*/
+  section{
+    padding:0;
+  }
+  
+  nav ul {
+    display:none;
+  }
+
+  nav .menu {
+    display: flex;
+    padding: 2%;
+    
+  }
+
+  /*------------main- sec----------------*/
+  .main-sec {
+    flex-direction: column;
+  }
+    
+  .info{
+    padding: 2% 5%;
+  }
+  
+  .image{
+    padding:0 0;
+  }
+  
+  .title {
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  .logo{
+    width:15%;
+  }
+
+
+
+  /*-------------------about------------*/
+  .about-sec {
+    padding:5% 5%;
+  }
+  
+  .logo2 {
+    width:15%;
+  }
+  
+  .about .title {
+    font-size:4rem;
+    margin-top: 10px;
+  }
+  
+  .about p {
+    font-size: 1.3em;
+  }
+  
+  
+  
+  
+  
+  
+  /*-------------------Servises------------*/
+  .sevices .title{
+    font-size:2.5rem;
+    align-items: right;
+    justify-content: center;
+  }
+  
+  .sm-container{
+    display:flex ;
+    justify-content: center;
+    flex-wrap:wrap;
+    padding-bottom: 50px;
+  }
+  
+  .card {
+    background-color: white;
+    color:black;
+    width:15em;
+    height:20em;
+    box-shadow: 0 5px 10px rgb(0,0,0);
+    padding:0 25px;
+    margin:50px 20px;
+    transition: 0.7s ease;
+  }
+  
+  .card:hover{
+    transform: scale(1.1);
+  }
+  
+  .icon{
+    text-align:center;
+    align-items: center;
+    margin:0;
+    padding: 0;
+  }
+  
+  .icon i{
+    position: relative;
+    bottom:30px;
+    color:white;
+    background-color: black;
+    font-size:3em;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    padding: 5px;
+  }
+  
+  .details{
+    margin-bottom:10px;
+    text-align:right;
+    justify-content: right;
+  }
+  
+  .details .categories{
+    display: block;
+    text-align: right;
+    
+  }
+  
+  .details h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin:0 0 10px 0;
+  }
+
+  
+
+}
